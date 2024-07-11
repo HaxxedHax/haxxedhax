@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Farm Florist 404</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="fflogo.png" type="fflogo">
+       <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cursor = document.querySelector('.custom-cursor');
+
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = `${e.clientX}px`;
+                cursor.style.top = `${e.clientY}px`;
+            });
+        });
+        </script>
+    </head>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            height: 2cm;
+            text-align: center;
+            cursor: none; /* Hide the default cursor */
+            margin: 0;
+        }
+        .custom-cursor {
+            position: fixed;
+            width: 90px; /* Adjust to match the size of your GIF */
+            height: 90px; /* Adjust to match the size of your GIF */
+            background-image: url('ccursor.gif'); /* Replace with the path to your GIF file */
+            background-size: cover;
+            pointer-events: none; /* Ensure the cursor does not block any click events */
+            transform: translate(-50%, -50%); /* Center the custom cursor */
+            z-index: 9999;
+        }
+        h1 {
+            font-family: 'Open Sans';
+            color: #9c9375;
+            font-style: normal;
+            font-weight: 400;
+            margin-top:30px;
+            font-size: 16px;
+        }
+
+        /* For Header */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        header {
+            background-color: #fff4e2; /* Change this to your desired background color */
+            height: 95px; /* Adjust the height as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            max-height: 90px; /* Adjust the size of the logo as needed */
+            max-width: 100%;
+        }
+        .button-container {
+            text-align: center;
+        }
+
+        .homepage {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #8a8063;
+            border-radius: 5px; /* Rounded corners */
+            text-decoration: none;
+            font-size: 25px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            cursor: none;
+        }
+        #homepage a {
+		    color:black;
+		    text-transform:uppercase;
+		    background: #fff4e2;
+		    border-radius:5px;
+		    padding:10px 20px;
+		    font-weight:bold;
+		    font-size:1.8em;
+		    text-decoration:none;
+	    }
+        /* Main Test */
+        p {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            color: #9c9375;
+            font-size: 16px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+        }
+        h2 {
+            margin-top: 60px;
+        }
+        /* 404 Section */
+        section{
+            height: 700px;
+        }
+        #s404 {
+            background: url(floral-back.png) center center fixed;
+            background-size: cover;
+        }
+        footer {
+            background-color: #fff4e2;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+        }
+        .contact-section {
+            flex: 1;
+            text-align: left;
+        }
+        h3 {
+            font-size: 30px;
+            color: #827653;
+            margin-top: -5px;
+            margin-bottom: 5px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+        }
+        .contact-section p {
+            font-size: 16px;
+            color: #9c9375;
+            margin-bottom: 5px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+        }
+        h4 {
+            font-size: 20px;
+            color: #8a8063;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        /* Footer */
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 10px;
+            min-width: 200px;
+        }
+
+        .footer-section h5 {
+            font-size: 30px;
+            color: #827653;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        .social-media a {
+            display: inline-block;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-media a:hover {
+            transform: scale(1.1);
+        }
+
+        .social-media img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .footer-bottom {
+            background-color: #e3dac9;
+            padding: 10px 0;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            font-size: 12px;
+            color: #666;
+        }
+        /* About Us */
+        h6 {
+            color: #827653;
+            font-family:'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            margin-top:20px;
+            margin-bottom: 20px;
+            margin-left: 30px;
+            margin-right: 30px;
+            text-align: left;
+            font-size: 30px;
+        }
+        .about-us p {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            color: #9c9375;
+            font-size: 18px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            text-align: left;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        h2 {
+            color: #827653;
+            font-family:'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            margin-top:40px;
+            margin-bottom: 20px;
+            margin-left: 30px;
+            margin-right: 30px;
+            text-align: left;
+            font-size: 30px;
+        }
+    </style>
+    <body>
+        <section id="s404">
+            <header>
+                <div class="header-container">
+                    <img src="fflogo.png" alt="Logo" class="logo">
+                </div>
+            </header>
+            <h1>   </h1>
+            <img src="floral4.png" width="140" margin-top="20px"/>
+            <img src="floral0.png" width="148"/>
+            <img src="floral4.png" width="140"/>
+            <div class="main-text">
+                <p><b>Woopsies! Looks like the florist is not home today!</b><br><b>Why not wait at the store?</b></br></p>
+            </div>
+            <div class="homepage">
+                <p2><a href="https://www.farmflorist.com/" class="homepage"><b>Return to Store</b></a></p2>
+            </div>
+        </section>
+        <about-us>
+            <div class="about-us">
+                <h6>About Us</h6>
+                <p>Once upon a time, the founders of FARM Florist were hardworking and passionate florists employed by other florist companies in Singapore. Bianca, Esther, Samantha, and Tiffany, got together one day and realised that they all had one thing in common – they could not accept what their bosses were doing with their companies.</p>
+                <p>A few factors plague the florist industry in Singapore. These factors include dishonesty, frequent late deliveries, cost cutting by making bouquets smaller than advertised, or cost saving by sending out flowers that do not look fresh at all. As an employee, a florist who is highly passionate in creating smiles may often feel helpless and depressed.</p>
+                <p>These four ladies, with a combined experience of more than a century, wanted to stand up against these common practices. They believed that they could change the industry one bouquet at a time. After all, flowers usually symbolise love, gratitude, care, and respect.</p>
+                <p>What started out as a home business venture would later see them start their first floral studio in Toa Payoh where they would happily curate amazing floral arrangements daily. They worked at least 12 hours a day, 7 days a week, handling all tasks from customer service, to flower making, to logistics.</p>
+                <p>Today, with the help of some investors, who clearly saw much value and potential in them, FARM Florist is arguably the largest online florist and flower delivery in Singapore. This is what you get when you get a group of experienced and passionate florists, bursting with energy, backed with decent financial support.</p>
+                <p>With certain operational features like the FARM Florist Money Back Guarantee, 24/7 customer service, Live Order Tracking, and Lowest Cost Guarantee, it is unlikely anyone else in Singapore would be able to beat them soon.</p>
+                <p>Awarded the Best Florist in Singapore, FARM Florist is not showing signs of slowing down!</p>
+
+                <h2>Our Motto</h2>
+                <p>Singapore's favourite bespoke florist, allowing the masses to deliver flowers and gifts to the loved ones, same day, fresh from the farm, without having to burn a hole in their pockets.</p>
+            </div>
+        </about-us>
+        <footer>
+            <div class="footer-content">
+                <div class="contact-section">
+                    <img src="fflogo.png" width="100"/>
+                    <h3>Contact Us</h3>
+                    <p>Phone: <a href="+6588950709">+65 8895 0709</a> </p>
+                    <p>Email: <a href="hello@farmflorist.com">hello@farmflorist.com</a></p>
+                    <p>WhatsApp: <a href="https://web.whatsapp.com/send?phone=+6588950709&text=Hi%20FARM%20Florist!%20I%20have%20a%20question">WhatsApp Us Here!</a></p>
+                    <p>Mailing Address: <b>5 Pereira Road, #04-01, Singapore 368025</b></p>
+                </div>
+                <div class="footer-section social-media">
+                    <h5>Follow Us</h5>
+                    <a href="https://www.facebook.com/FARMfloristSG"><img src="facebook-logo.png" width="250" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/farmflorist/"><img src="instagram-logo.png" width="100" alt="Twitter"></a>
+                    <a href="https://www.tiktok.com/@farmflorist"><img src="tiktok-logo.png" width="100" alt="Instagram"></a>
+                </div>
+            </div>
+        </footer>
+        <div class="custom-cursor"></div>
+        <script src="script.js"></script> 
+    </body>
+</html>
